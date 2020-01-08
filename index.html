@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Porsche</title>
+	<link rel="stylesheet" href="left_menu.css">
+</head>
+<body onmousemove="showCoords(event)">
+	<div class="mouse_poit" id="mouse_poit">
+	</div>
+	<div class="wrapper_menu">	
+		<div class="menu" id="menu">
+			<div class="icon" id="icon_menu" onclick="menu_click()">
+				<div class="icon-bar"></div>
+				<div class="icon-bar"></div>
+				<div class="icon-bar"></div>
+			</div>
+			<div class="title_page" id="title_page">home</div>
+			<div class="to_top" id="to_top">
+				^
+			</div>
+		</div>
+	<div class="content" id="content">		
+		<div class="blur" id="blur"></div>
+		<ul class="item_content" id="item_content">
+			<li class="image content_menu" id="image" >
+				<img src="Images/hoangdo.jpg" alt="">
+			</li>
+			<li class="about content_menu" id="about">	
+				<h3>This about</h3>
+			</li>
+			<li class="about content_menu" id="edu">	
+				<h3>This Education</h3>
+			</li>
+				<li class="skill content_menu" id="skill">
+			<h3>This Skill</h3>
+			</li>
+				<li class="exe content_menu" id="exe">
+			<h3>This Experience</h3>
+			</li>
+			<li class="contact content_menu" id="contact">
+				<h3>This Contact</h3>
+			</li>
+		</ul>
+		<div id="content_list">
+			<p>MENU</p>
+				<ul class="list" id="list">
+					<li data_attribute="about" id="list_about">About</li>
+					<li data_attribute="edu">Education</li>
+					<li data_attribute="skill">Skill</li>
+					<li data_attribute="exe">Experience</li>
+					<li data_attribute="contact">Contact me</li>
+				</ul>
+				<ul class="list_2" id="list_2">
+					<li>TERMS OF use</li>
+					<li>MADE BY EFIR MEDIA</li>
+				</ul>
+		</div>
+	</div>
+	</div>
+	<div class="bg">
+		<video src="https://uv-way.com/backend/wp-content/uploads/2019/09/Ultra-Violet-Loading-02-youtube.mp4" autoplay="" muted="" loop=""></video>
+	</div>
+	<script src="left_menu.js"></script>
+</body>
+</html>
