@@ -57,6 +57,3 @@ menu_click =function (){
 	}
 
 	// load page
-	document.getElementsByTagName('body');
-	console.log(window.performance);
-	

@@ -3,6 +3,15 @@
     padding: 0;
 }
 
+.content_menu h3 {
+    font-size: 36px;
+    text-transform: capitalize;
+}
+
+.content_menu p {
+    color: gray !important;
+}
+
 ul#list {
     position: relative;
     z-index: 3;
@@ -63,7 +72,7 @@ ul#list li {
     background: gray;
 }
 .to_right{
-    transition: 0.4s;
+    transition: 0.6s;
     transform: translateX(0px) !important;
 }
 
@@ -78,7 +87,7 @@ video {
     left: 0px;
 }
 
-div#content p {
+div#content .blur_title {
     opacity: 0.15;
     z-index: 2;
     position: absolute;
@@ -168,6 +177,8 @@ ul#list li {
     color: #fff;
     list-style: none;
     margin-bottom: 20px;
+    width: max-content;
+    height: max-content;
 }
 
 
@@ -207,13 +218,25 @@ div#content {
 div#content .content_menu {
     left: 0px;
     top: 0px;
-    transform: translateX(200%);
+    padding: 5%;
+    line-height: 2.2;
+     transform: translateX(-100%); 
     height: 100vh;
     position: absolute;
     width: 50%;
-    overflow: hidden;
+    overflow: overlay;
+    box-sizing: border-box;
+    background: #fff;
 }
-
+.image_bg_content{
+     left: 0px;
+     top: 0px;
+     transform: translateX(200%);
+     height: 100vh;
+     position: absolute;
+     width: 50%;
+     overflow: hidden;
+}
 div#title_page {
     top: 50%;
     width: 100%;
@@ -280,4 +303,19 @@ div#menu {
 .wrapper_menu {
     position: relative;
     z-index: 2;
+}
+
+/* style scroll bar */
+::-webkit-scrollbar {
+    width: 3px;
+}
+ 
+::-webkit-scrollbar-track {
+    /*-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); */
+    background-color: #fff;
+}
+ 
+::-webkit-scrollbar-thumb {
+   background-color: #34343434;
+    /*-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); */
 }
