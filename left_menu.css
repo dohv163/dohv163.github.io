@@ -397,6 +397,10 @@ div#menu {
  @media only screen and (max-width: 768px) {
      *{}
 
+div#icon_menu {
+    display: block;
+}
+
 div#content_page {
     padding: 10px;
 }
@@ -413,7 +417,6 @@ div#content_list {
     display: block;
 }
 
-ul#list {}
 
 ul#list {
     /* position: fixed; */
