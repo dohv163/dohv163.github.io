@@ -3,6 +3,32 @@
     padding: 0;
 }
 
+div#title {
+    font-size: 4.5rem;
+    position: absolute;
+    top: 50%;
+    left: 10%;
+}
+
+.content_home .logo h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 36px;
+}
+
+.content_home .logo {
+    position: absolute;
+    left: 50px;
+    top: 50px;
+}
+
+.content_home {
+    position: fixed;
+    width: calc(100% - 200px);
+    box-sizing: border-box;
+    overflow: hidden;
+    height: 100vh;
+}
+
 div#logo span {
     font-size: 36px;
     font-weight: 600;
