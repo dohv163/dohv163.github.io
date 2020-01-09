@@ -351,6 +351,7 @@ div#to_top {
 div#icon_menu {
     box-sizing: border-box;
     height: 50px;
+    display: none;
 }
 
 div#icon_menu .icon-bar {
