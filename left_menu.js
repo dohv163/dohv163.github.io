@@ -56,4 +56,8 @@ menu_click =function (){
 		})
 	}
 
-	// load page
+	list_menu = document.getElementById('list_menu');
+	icon_menu = document.getElementById('icon_menu');
+	icon_menu.addEventListener("click",function(){
+		list_menu.classList.toggle('show_menu');
+	});

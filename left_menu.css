@@ -6,8 +6,11 @@
 div#title {
     font-size: 4.5rem;
     position: absolute;
-    top: 50%;
+    top: 60%;
+    font-family: 'Montserrat', sans-serif;
     left: 10%;
+    font-weight: bold;
+    color: #fff;
 }
 
 .content_home .logo h3 {
@@ -19,25 +22,29 @@ div#title {
     position: absolute;
     left: 50px;
     top: 50px;
+    color: #fff;
 }
 
 .content_home {
-    position: fixed;
+    background: url(Images/congau.jpg);
     width: calc(100% - 200px);
     box-sizing: border-box;
     overflow: hidden;
     height: 100vh;
+    position: fixed;
+    background-size: cover;
 }
 
 div#logo span {
     font-size: 36px;
     font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
 }
 
 ul#list_menu {
     box-sizing: border-box;
     width: 100%;
-    height: 100vh;
+    /* height: 100vh; */
 }
 
 #list_menu li {
@@ -50,6 +57,8 @@ ul#list_menu {
 #list_menu li a {
     text-decoration: none;
     color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    margin-left: 10px;
 }
 
 ul li {
@@ -88,6 +97,7 @@ div#content_page p {
 div#content_page h3 {
     font-size: 36px;
     margin-bottom: 30px;
+    font-family: 'Montserrat', sans-serif;
 }
 
 div#right_content_page {
@@ -369,7 +379,6 @@ div#to_top {
     border: 1px solid #fff;
     line-height: 50px;
     border-radius: 50%;
-    display: block;
     margin: auto;
     text-align: center;
 }
@@ -423,8 +432,15 @@ div#menu {
  @media only screen and (max-width: 768px) {
      *{}
 
+.content_home {
+    position: unset;
+}
+
 div#icon_menu {
+    box-sizing: border-box;
+    position: absolute;
     display: block;
+    right: 20px;
 }
 
 div#content_page {
@@ -464,12 +480,25 @@ div#to_top {
     display: none;
 }
 
-div#logo {font-size: 36px;}
+div#logo {left: 20px;top: 30px;position: absolute;}
 
 div#mouse_poit {display: none;}
 
 ul#list_menu {
+    left: 0px;
+    overflow: hidden;
+    top: 100px;
+    position: fixed;
+    z-index: 999;
+    background: #252525;
+    padding: 20px;
     display: none;
+    transition: 0.4s;
+}
+
+ul#list_menu.show_menu {
+    display: block;
+    transition: 0.4s;
 }
 
 div#right_content_page {
@@ -492,6 +521,8 @@ div#left_content_page {
 }
 
 div#menu {
+    position: relative;
+    box-sizing: border-box;
     width: 100%;
     height: 50px;
     flex-direction: row;
