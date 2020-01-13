@@ -1,27 +1,27 @@
 
 // All event menu 
-menu_click =function (){
+// menu_click =function (){
 
-	stt_mouse =  document.getElementById('mouse_poit');
-	blur = document.getElementById('blur').classList.toggle('to_left_blur');
-	icon_bar = document.getElementsByClassName('icon-bar');
-	content_menu = document.getElementById('image').classList.toggle('to_left');
-	list_content = document.getElementById('content_list').classList.toggle('to_left');
-	content_list =document.getElementById('list').classList.toggle('sl_to_left');
-	mouse_poit = document.getElementById('mouse_poit');
-	for (var i = 0; i < icon_bar.length; i++) {
-			icon_bar[0].classList.toggle('rotate_white_1');
-			icon_bar[1].classList.toggle('rotate_white_2');
-			icon_bar[2].classList.toggle('hide');
-		}
+// 	stt_mouse =  document.getElementById('mouse_poit');
+// 	blur = document.getElementById('blur').classList.toggle('to_left_blur');
+// 	icon_bar = document.getElementsByClassName('icon-bar');
+// 	content_menu = document.getElementById('image').classList.toggle('to_left');
+// 	list_content = document.getElementById('content_list').classList.toggle('to_left');
+// 	content_list =document.getElementById('list').classList.toggle('sl_to_left');
+// 	mouse_poit = document.getElementById('mouse_poit');
+// 	for (var i = 0; i < icon_bar.length; i++) {
+// 			icon_bar[0].classList.toggle('rotate_white_1');
+// 			icon_bar[1].classList.toggle('rotate_white_2');
+// 			icon_bar[2].classList.toggle('hide');
+// 		}
 
-	var list_menu = document.querySelectorAll('#list.list li');
-	for (var i = 0; i < list_menu.length; i++) {
-		list_menu[i].classList.toggle('sl_to_left')
-	}
-	stt_mouse.classList.toggle('circle');
+// 	var list_menu = document.querySelectorAll('#list.list li');
+// 	for (var i = 0; i < list_menu.length; i++) {
+// 		list_menu[i].classList.toggle('sl_to_left')
+// 	}
+// 	stt_mouse.classList.toggle('circle');
 
-	}
+// 	}
 
 	// event mouse
 
