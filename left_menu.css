@@ -5,7 +5,6 @@
 
 div#title {
     font-size: 4.5rem;
-    position: absolute;
     top: 60%;
     font-family: 'Montserrat', sans-serif;
     left: 10%;
@@ -26,13 +25,16 @@ div#title {
 }
 
 .content_home {
-    background: url(Images/congau.jpg);
-    width: calc(100% - 200px);
+    background: url(Images/header-bg.jpg);
+    width: 100%;
     box-sizing: border-box;
     overflow: hidden;
     height: 100vh;
-    position: fixed;
     background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
 }
 
 div#logo span {
@@ -432,8 +434,11 @@ div#menu {
  @media only screen and (max-width: 768px) {
      *{}
 
+div#title {
+    font-size: 36px;
+}
+
 .content_home {
-    position: unset;
 }
 
 div#icon_menu {
@@ -441,6 +446,7 @@ div#icon_menu {
     position: absolute;
     display: block;
     right: 20px;
+    z-index: 999;
 }
 
 div#content_page {
@@ -485,6 +491,7 @@ div#logo {left: 20px;top: 30px;position: absolute;}
 div#mouse_poit {display: none;}
 
 ul#list_menu {
+    transform: translateX(100%);
     left: 0px;
     overflow: hidden;
     top: 100px;
@@ -492,13 +499,12 @@ ul#list_menu {
     z-index: 999;
     background: #252525;
     padding: 20px;
-    display: none;
     transition: 0.4s;
 }
 
 ul#list_menu.show_menu {
-    display: block;
     transition: 0.4s;
+    transform: translateX(0px);
 }
 
 div#right_content_page {
@@ -527,6 +533,7 @@ div#menu {
     height: 50px;
     flex-direction: row;
     overflow: hidden;
+    background: transparent;
 }
 
 .wrapper_menu {
