@@ -396,7 +396,6 @@ div#to_top {
 
 div#icon_menu {
     box-sizing: border-box;
-    height: 50px;
     display: none;
 }
 
@@ -451,7 +450,8 @@ div#title {
 }
 
 div#icon_menu {
-    box-sizing: border-box;
+    height: max-content;
+    width: max-content;
     position: absolute;
     display: block;
     right: 20px;
